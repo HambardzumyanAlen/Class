@@ -1,7 +1,29 @@
-package model;
+package JavaClass;
 
 public class Problem {
 
+    public String name = "Aram";
+
+    public void sum(int x, int y) {
+        System.out.println(x + y);
+    }
+
+    private double engine ;
+    public double getEngine() {
+        return engine;
+    }
+    public void setEngine(double e) {
+        if (e > 0)
+            engine = e;
+    }
+    //-------------------------------------------
+
+
+
+
+
+    //-------------------------------------------
+    //Xndirner
     public void print7() {
         int n = 7;
         int number[] = {1, 4, 7, -5, 3, 7, 32, 4, -7};
@@ -12,8 +34,8 @@ public class Problem {
             }
         }
         System.out.println(count);
-    }
 
+    }
 
     public void oddNumbers() {
         int numbers[] = {1, 4, 7, -5, 3, 7, 32, 4, -7, 12};
@@ -48,8 +70,7 @@ public class Problem {
         }
     }
 
-
-    public void CommonElements(){
+    public void CommonElements() {
         int[] firstArray = {3, 6, 0, -3, 2, 2, 13};
         int[] secondArray = {0, 56, -5, 45, 2, 2, 0, 12, 6, 13, 56};
         int minLengthOfGivenArrays = firstArray.length > secondArray.length
@@ -100,7 +121,7 @@ public class Problem {
     }
 
 
-    public  void MissingNumber(){
+    public void MissingNumber() {
         int[] arr = {1, 2, 3, 4, 5, 7, 8, 9};
         int n = arr.length + 1;
         int sum = (n * (n + 1)) / 2;
@@ -109,7 +130,8 @@ public class Problem {
         }
         System.out.println("Missing number is " + sum);
     }
-    public void MinNumber(){
+
+    public void MinNumber() {
         int[] array = {1, 4, 7, -5, 3, 7, -32, 4, -7, 123,};
         int min = array[0];
         for (int i = 1; i < array.length; i++) {
@@ -120,7 +142,7 @@ public class Problem {
         System.out.println("Minimum Number is " + min);
     }
 
-    public void Palindrom(){
+    public void Palindrom() {
         int[] numbers = {1, 4, -6, 8, 8, -6, 4, 1};
 
         int reverse = numbers.length - 1;
@@ -141,8 +163,7 @@ public class Problem {
 
     }
 
-
-    public void InAscendingOrder(){
+    public void InAscendingOrder() {
         int exersice[] = {-2, 1, 7, 9, 14, 26, 30};
         int n = 0;
         int count = 0;
@@ -158,7 +179,7 @@ public class Problem {
         }
     }
 
-    public void Prime(){
+    public void Prime() {
         int n = 11;
         boolean prime = true;
         for (int i = 2; i < n; i++) {
@@ -170,7 +191,7 @@ public class Problem {
         System.out.println(prime);
     }
 
-    public void Matrix(){
+    public void Matrix() {
         int[][] arr = {{1, 2, 3, 4},
                 {5, 6, 7, 8},
                 {9, 0, 1, 2},
@@ -190,7 +211,7 @@ public class Problem {
         }
     }
 
-    public  void FirstRepeatingNumberIndex(){
+    public void FirstRepeatingNumberIndex() {
         int[] numbers = {4, 2, 7, -5, 9, 6, 7, 9, -2, -5, 7};
         int firstRepeatingNumber = 0;
         for (int i = 0; i < numbers.length - 1; i++) {
@@ -210,7 +231,7 @@ public class Problem {
         }
     }
 
-    public void Swap(){
+    public void Swap() {
         int[] array = {2, -6, -8, 5, -4, 90, 13, -68, 0, -7};
         int a = 0;
         int k = 5;
@@ -230,4 +251,11 @@ public class Problem {
         System.out.println();
         System.out.println(array[k - 1]);
     }
+    //--------------------------------------------------
+
+
+
+
+
+
 }
